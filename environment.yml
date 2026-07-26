@@ -1,0 +1,20 @@
+name: splataudit
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy<2
+  - scipy
+  - pillow
+  - plyfile
+  - tqdm
+  - matplotlib
+  - pip
+  - ninja
+  - setuptools>=68
+  - wheel
+  - pip:
+      - --index-url https://download.pytorch.org/whl/cu118
+      - torch==2.4.1+cu118
+      - torchvision==0.19.1+cu118

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "splataudit"
+version = "0.1.0"
+description = "Reference-free geometric auditing for 3D Gaussian Splatting"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy<2",
+  "scipy",
+  "pillow",
+  "plyfile",
+  "tqdm",
+  "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+include = ["splataudit*"]
