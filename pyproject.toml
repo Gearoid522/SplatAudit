@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "splataudit"
 version = "0.1.0"
-description = "Reference-free geometric auditing for 3D Gaussian Splatting"
+description = "Reference-free geometric auditing of floater artifacts in 3D Gaussian Splatting"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
   "numpy<2",
@@ -15,6 +16,10 @@ dependencies = [
   "tqdm",
   "matplotlib",
 ]
+
+[project.urls]
+Repository = "https://github.com/Gearoid522/SplatAudit"
+Paper = "https://kdd2026.kdd.org/wp-content/uploads/2026/09/14-SplatAudit-Reference-Free-Geometric-Auditing-of-Floater-Artifacts-in-3D-Gaussian-Splatting.pdf"
 
 [tool.setuptools.packages.find]
 include = ["splataudit*"]
